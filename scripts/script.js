@@ -5,7 +5,7 @@ var ctx = canvas.getContext("2d");
 ctx.beginPath();
 var windowWidth=window.innerWidth,windowHeight=window.innerHeight,circleRadius=20,circleX=circleRadius,circleY=windowHeight-circleRadius;
 var accelerationX=5,accelerationY=2,accelerationRadius=3,times=0,timesForSmallerCircles=0;
-var draw=setInterval(redrawBackground,5);
+var draw=setInterval(redrawBackground,0.5);
 var accelerationsX = [0,-0.5,-1.7,0.5,1.7];
 var accelerationsY = [2,1.3,1.3,1.3,1.3];
 var positionsY = [windowHeight,windowHeight,windowHeight,windowHeight,windowHeight];
@@ -27,7 +27,7 @@ times++;
 if(times>250)
 {
 clearInterval(draw);
-smallerCircles = setInterval(translatingCircles,5);
+smallerCircles = setInterval(translatingCircles,0.1);
 }
 }
 function drawCircle(X,Y,circleRadius,fillStyle)
@@ -82,6 +82,13 @@ ctx.beginPath()
 ctx.arc(buttonsX[i-1],buttonsY[i-1]+Radius,Radius,0, Math.PI * 2, true);
 ctx.arc(buttonsX[i-1]+6*Radius,buttonsY[i-1]+Radius,Radius, 0, Math.PI * 2, true);
 ctx.fill();
+ctx.font = '32px serif';
+if(ctx.fillStyle == "#ffffff")
+ctx.fillStyle = "#000000"
+else
+ctx.fillStyle = "#ffffff"
+ctx.textBaseline="hanging"
+ctx.fillText(buttonsText[i-1],buttonsX[i-1], buttonsY[i-1]+Radius/4 ,6*Radius);
 }
 }
 function addImage(X,Y,Radius)
@@ -117,8 +124,7 @@ function isInside(pos,width,height){
 canvas.addEventListener('click', function(evt) {
     var mousePos = getMousePos(canvas, evt);
     var buttonNumber = isInside(mousePos,120,40);
-    console.log(buttonNumber);
     if (buttonNumber>=0) {
-     
+    console.log(buttonsText[buttonNumber])
     } 
 }, false);
