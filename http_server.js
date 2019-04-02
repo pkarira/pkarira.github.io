@@ -6,6 +6,6 @@ app.use(express.static(__dirname + '/scripts/'));
 app.use(express.static(__dirname + '/styles/'));
 app.use(express.static(__dirname + '/assets/'));
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/test.html')))
+app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/main_page.html')))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
