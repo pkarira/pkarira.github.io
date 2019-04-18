@@ -48,7 +48,7 @@ for (i =0 ; i<5 ; i++)
 {
 var fillStyle;
 if(i==0)
-fillStyle="#ffff00"
+fillStyle="#1E4E8B"
 else
 if(i==1 || i==2)
 fillStyle="#ffffff"
@@ -102,7 +102,7 @@ ctx.closePath();
 ctx.clip();
 ctx.drawImage(img, X-Radius, Y-Radius, 2*Radius, 2*Radius);
 ctx.arc(X,Y, Radius, 0, Math.PI * 2, true);
-ctx.strokeStyle="#ffff00";
+ctx.strokeStyle="#1E4E8B";
 ctx.lineWidth = 10;
 ctx.stroke();
 };
