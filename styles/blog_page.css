@@ -23,3 +23,23 @@
 	top:70px;
 	background-color: white;
 }
+#main_blog
+{
+	margin-top: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	word-wrap:break-word;
+}
+#heading
+{
+	font-size: 50px;
+}
+#date
+{
+	margin-bottom: 20px;
+}
+p
+{
+	font-size: 20px;
+}

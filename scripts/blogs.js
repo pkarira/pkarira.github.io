@@ -1,5 +1,5 @@
 date = ["12th Jan","12th Jan"];
-title = ["here","12th Jan"];
+title = ["Journey so far","12th Jan"];
 subtitle = ["h","12th Jan"];
 total_blogs = date.length;
 blog_list = document.getElementById('blogs');
