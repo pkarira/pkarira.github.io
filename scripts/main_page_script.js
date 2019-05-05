@@ -133,6 +133,10 @@ function translatingCircles()
                         if(buttonNumber==1)
                         {
                             window.open('/reading_material',"_self")
+                        }else
+                        if(buttonNumber==2)
+                        {
+                            window.open('/reading_material',"_self")
                         }
                     } 
                 }, false);
