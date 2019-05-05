@@ -16,9 +16,10 @@ for (var i = 0; i < total_blogs; i++) {
 	item.appendChild(date_div);
 	item.appendChild(document.createTextNode(title[i]));
 	item.appendChild(subtitle_div);
+	let blog_number = i+1;
 	item.onclick = function()
 	{
-		window.location.href = "/blogs?blog=1"
+		window.location.href = "/blogs?blog="+blog_number;
 	}
 	blog_list.appendChild(item);
 }
