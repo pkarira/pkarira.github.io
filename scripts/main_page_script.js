@@ -12,7 +12,7 @@ var positionsY = [windowHeight,windowHeight,windowHeight,windowHeight,windowHeig
 var positionsX = [windowWidth/2,windowWidth/2,windowWidth/2,windowWidth/2,windowWidth/2];
 var buttonsX=[]
 var buttonsY=[]
-var buttonsText=["Resume","Content","Blogs","About"]
+var buttonsText=["Resume"," Content","  Blogs","  About"]
 function redrawBackground()
 {
 ctx.clearRect(0, 0, canvas.width,canvas.height);
@@ -94,7 +94,7 @@ ctx.fillText(buttonsText[i-1],buttonsX[i-1], buttonsY[i-1]+Radius/4 ,6*Radius);
 function addImage(X,Y,Radius)
 {
 var img = new Image();
-img.src = 'profile.jpg';
+img.src = 'web.png';
 img.onload = function() {
 ctx.beginPath();
 ctx.arc(X, Y, Radius, 0, Math.PI * 2, true);
@@ -125,6 +125,6 @@ canvas.addEventListener('click', function(evt) {
     var mousePos = getMousePos(canvas, evt);
     var buttonNumber = isInside(mousePos,120,40);
     if (buttonNumber>=0) {
-    console.log(buttonsText[buttonNumber])
+    console.log(buttonNumber)
     } 
 }, false);
