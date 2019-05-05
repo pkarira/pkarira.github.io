@@ -136,7 +136,11 @@ function translatingCircles()
                         }else
                         if(buttonNumber==2)
                         {
-                            window.open('/blogs',"_self")
+                            //window.open('/blogs',"_self")
+                        }else
+                        if(buttonNumber==3)
+                        {
+                            //window.open('/about',"_self")
                         }
                     } 
                 }, false);
