@@ -5,7 +5,7 @@ const path = require('path');
 app.use(express.static(__dirname + '/scripts/'));
 app.use(express.static(__dirname + '/styles/'));
 app.use(express.static(__dirname + '/assets/'));
-
-app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/main_page.html')))
-
+app.use(express.static(__dirname + '/html/'));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/html/main_page.html')))
+app.get('/reading_material', (req, res) => res.sendFile(path.join(__dirname+'/html/content_page.html')))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

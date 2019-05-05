@@ -129,6 +129,10 @@ function translatingCircles()
                         if(buttonNumber==0)
                         {
                             window.open('pulkit_karira.pdf');
+                        }else
+                        if(buttonNumber==1)
+                        {
+                            window.open('/reading_material',"_self")
                         }
                     } 
                 }, false);
