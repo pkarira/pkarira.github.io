@@ -136,7 +136,7 @@ function translatingCircles()
                         }else
                         if(buttonNumber==2)
                         {
-                            window.open('/reading_material',"_self")
+                            window.open('/blogs',"_self")
                         }
                     } 
                 }, false);

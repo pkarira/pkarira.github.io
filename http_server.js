@@ -8,4 +8,6 @@ app.use(express.static(__dirname + '/assets/'));
 app.use(express.static(__dirname + '/html/'));
 app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/html/main_page.html')))
 app.get('/reading_material', (req, res) => res.sendFile(path.join(__dirname+'/html/content_page.html')))
+app.get('/blogs', (req, res) => res.sendFile(path.join(__dirname+'/html/blogs.html')))
+app.get('/blogs/blog_pages', (req, res) => res.sendFile(path.join(__dirname+'/html/blog_page.html')))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
