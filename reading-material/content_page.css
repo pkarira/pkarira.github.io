@@ -1,0 +1,75 @@
+#navigation
+{
+	height:100%;
+	width: 20%;
+	color: #ffffff;
+	background-color: #000000;
+	float: left;
+}
+body
+{
+	height:800px;
+	margin: 0;
+	padding: 0;
+}
+#heading
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 50px;
+}
+.collapsible {
+	background-color: #000000;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 40%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	margin:auto;
+	display:block;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.active, .collapsible:hover {
+}
+.content {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	width: 40%;
+	margin: auto;
+}
+.collapsible:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.link_button {
+	background-color: #CCCCCC;
+	cursor: pointer;
+	width: 95%;
+	/*padding: 18px;*/
+
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	display:block;
+	margin:auto;
+	margin-top: 3px;
+	height: 20px;
+	border-radius: 4px;
+}

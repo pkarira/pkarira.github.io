@@ -94,7 +94,7 @@ function translatingCircles()
                 function addImage(X,Y,Radius)
                 {
                     var img = new Image();
-                    img.src = 'web.png';
+                    img.src = '../assets/web.png';
                     img.onload = function() {
                         ctx.beginPath();
                         ctx.arc(X, Y, Radius, 0, Math.PI * 2, true);
@@ -128,15 +128,15 @@ function translatingCircles()
                         console.log(buttonNumber)
                         if(buttonNumber==0)
                         {
-                            window.open('pulkit_karira.pdf');
+                            window.open('assets/pulkit_karira.pdf');
                         }else
                         if(buttonNumber==1)
                         {
-                            window.open('/reading_material',"_self")
+                            window.open('/reading-material',"_self")
                         }else
                         if(buttonNumber==2)
                         {
-                            //window.open('/blogs',"_self")
+                            window.open('/blogs',"_self")
                         }else
                         if(buttonNumber==3)
                         {
