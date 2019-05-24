@@ -19,8 +19,11 @@ var links = {
   "Internet":[["How Web Browser works","https://blog.logrocket.com/how-browser-rendering-works-behind-the-scenes-6782b0e8fb10"],
   			["How Internet Works","https://medium.com/@adamzerner/overview-of-computer-networking-70848bd62710"],
   			["Routing bascis(Think like a computer)","https://www.think-like-a-computer.com/2011/08/24/the-routing-table/"],
-  			["Port Forwarding","https://learn.g2crowd.com/port-forwarding"]],
-  "Computer Networking":[["Computer Networking Top Down Approach","http://ce.sharif.edu/courses/94-95/2/ce443-3/resources/root/Book/fqo47.Computer.Networking.A.TopDown.Approach.6th.Edition.pdf"]]
+  			["Port Forwarding","https://learn.g2crowd.com/port-forwarding"],
+  			["How Does https work","https://robertheaton.com/2014/03/27/how-does-https-actually-work/"],
+  			["How ssl ensures message integrity","https://stackoverflow.com/questions/18389965/does-tls-ensure-message-integrity-and-confidentiality-of-data-transmission-in-a"]],
+  "Computer Networking":[["Computer Networking Top Down Approach","http://ce.sharif.edu/courses/94-95/2/ce443-3/resources/root/Book/fqo47.Computer.Networking.A.TopDown.Approach.6th.Edition.pdf"],
+  							["Can a TCP port have two sockets","https://stackoverflow.com/questions/11129212/tcp-can-two-different-sockets-share-a-port"]]
 };
 
 
